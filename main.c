@@ -5,16 +5,18 @@ int i = 0;
 int cantidad = 0;
 
 va_start(arg, format);
-while(format[i] != '\0')
+while(format[i] != '\0') /* Este while recorre format hasta su fin*/
 {
-    if(format[i] == '%')
+    if(format[i] == '%') /* Si encuentra un % entra aca*/
     {
         i++;
-        hub(format[i]);
+        cantidad = cantidad + hub(format[i], arg); 
+        /* Manda el siguiente caracter a la funcion hub */
     }
     else
     {  
-        cantidad++;
+        /* Si no es un % simplemente imprime el caracter */
+        cantidad++; /* y suma uno a la cantidad */
         _putchar(format[i]);
 
     } 
