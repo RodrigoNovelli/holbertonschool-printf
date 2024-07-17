@@ -1,12 +1,13 @@
-int (*hub(char letra))(va_list){
-
-    datatype ls[] = {
+#include "main.h"
+int (*hub(char letra))(va_list arg)
+{
+	datatype ls[] = {
     {'s', prints},
     {'c', printc},
     {'d', printd},
     {'i', printd},
     {'\0', printnulo},
-    }
+    };
     int i = 0;
 
     while (i < 5)
