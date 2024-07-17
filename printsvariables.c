@@ -24,7 +24,7 @@ int printd(va_list a)
 }
 int prints(va_list a)
 {
-	int i;
+	int i = 0;
 	char *arg = va_arg(a, char*);
 	while (arg[i] != '\0')
 	{
