@@ -14,7 +14,6 @@ typedef struct datatype
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*hub(char letra))(va_list);
-int printliteral(char letra);
 int printnulo(va_list a);
 int printc(va_list a);
 int printd(va_list a);

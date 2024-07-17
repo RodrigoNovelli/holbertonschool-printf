@@ -16,7 +16,8 @@ int (*hub(char letra))(va_list arg)
             return (ls[i].funcion);
         i++;
     } 
-    return (printliteral(letra));
-    
+    _putchar('%');
+	_putchar(letra);
+	return (NULL);
 
 }
