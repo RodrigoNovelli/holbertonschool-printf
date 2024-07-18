@@ -22,6 +22,11 @@ int printd(va_list a)
         numaux2 *= 10;
     }
 	for (i = 0; i < contador; i++) {
+		if (negativo == 1)
+		{
+		_putchar('-');
+		negativo = 0;
+		}
         _putchar((num / numaux2) % 10 + '0');
         numaux2 /= 10;
     }

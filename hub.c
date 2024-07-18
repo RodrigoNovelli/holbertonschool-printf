@@ -6,6 +6,7 @@ int (*hub(char letra))(va_list arg)
     {'c', printc},
     {'d', printd},
     {'i', printd},
+    {'%', printnulo},
     {'\0', printnulo},
     };
     int i = 0;
