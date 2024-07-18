@@ -9,7 +9,7 @@
 int printd(va_list a)
 {
 	int num = va_arg(a, int);
-	int numaux, contador, negativo, i = 0;
+	int numaux, contador = 0, negativo = 0, i = 0;
 	int numaux2 = 1;
 
 	if (num < 0)
