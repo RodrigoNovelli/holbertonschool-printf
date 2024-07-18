@@ -39,3 +39,25 @@ int printd(va_list a)
 	}
 	return (contador);
 }
+/**
+ * prints - This function is called whern  you need to print a string
+ * @a: The string you wanna print
+ * Return: The lenght of the string, so the amount of character you'v printed
+ */
+int prints(va_list a)
+{
+	int i = 0;
+	char *arg = va_arg(a, char*);
+
+	if (arg == '\0')
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	while (arg[i] != '\0')
+	{
+		_putchar(arg[i]);
+		i++;
+	}
+	return (i);
+}

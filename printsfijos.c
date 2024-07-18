@@ -37,20 +37,3 @@ int printc(va_list a)
 	_putchar(c);
 	return (1);
 }
-/**
- * prints - This function is called whern  you need to print a string
- * @a: The string you wanna print
- * Return: The lenght of the string, so the amount of character you'v printed
- */
-int prints(va_list a)
-{
-	int i = 0;
-	char *arg = va_arg(a, char*);
-
-	while (arg[i] != '\0')
-	{
-		_putchar(arg[i]);
-		i++;
-	}
-	return (i);
-}
