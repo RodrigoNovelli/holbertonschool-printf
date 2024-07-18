@@ -20,3 +20,14 @@ int printc(va_list a)
 	_putchar(c);
 	return(1);
 }
+int prints(va_list a)
+{
+	int i = 0;
+	char *arg = va_arg(a, char*);
+	while (arg[i] != '\0')
+	{
+		_putchar(arg[i]);
+		i++;
+	}
+	return (i);
+}

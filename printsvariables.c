@@ -1,35 +1,30 @@
 #include "main.h"
-
+#include <stdio.h>
 int printd(va_list a)
 {
 	int num = va_arg(a, int);
-	int numaux = num;
-	int contador = 0, i, j = 0, numaux2 = 1;
-	
-	while (numaux == 0)
+	int numaux, contador = 0, i, j = 0, numaux2 = 1, negativo = 0;
+
+
+
+	if (num < 0)
+	{
+	negativo = 1;
+	num = -num;
+	}
+	numaux = num;
+	while (numaux > 0)
 	{
 		contador++;
-		numaux / 10;
+		numaux = numaux / 10;
 	}
-	for (i = 0; i < contador; i++)
-	{
-		for (j = contador - 1; j > i; j--)
-		{
-			numaux2 = numaux2 * 10;
-		}
-		_putchar((num / numaux2) % 10 + '0');
-		numaux = 1;
-	}
+	 for (i = 1; i < contador; i++) {
+        numaux2 *= 10;
+    }
+	for (i = 0; i < contador; i++) {
+        _putchar((num / numaux2) % 10 + '0');
+        numaux2 /= 10;
+    }
 	return (contador);
 }
-int prints(va_list a)
-{
-	int i = 0;
-	char *arg = va_arg(a, char*);
-	while (arg[i] != '\0')
-	{
-		_putchar(arg[i]);
-		i++;
-	}
-	return (i);
-}
+
