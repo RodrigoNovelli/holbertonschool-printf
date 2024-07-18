@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <unistd.h>
 /**
  * struct datatype - This istructure will be used for hub to call the correct
  * function for each case
