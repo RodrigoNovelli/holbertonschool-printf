@@ -57,11 +57,6 @@ int prints(va_list a)
 		write(1, "(null)", 6);
 			return (6);
 	}
-	if (arg == "%\0")
-	{
-		_putchar('\0');
-		return (1);
-	}
 	while (arg[i] != '\0')
 	{
 		_putchar(arg[i]);
