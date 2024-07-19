@@ -26,4 +26,5 @@ int printnulo(va_list a);
 int printc(va_list a);
 int printd(va_list a);
 int prints(va_list a);
+int printliteral(char letra);
 #endif /* DOG_H */

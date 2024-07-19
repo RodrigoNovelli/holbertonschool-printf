@@ -9,7 +9,7 @@
 int printd(va_list a)
 {
 	int num = va_arg(a, int);
-	int numaux, contador = 0, negativo = 0, i = 0;
+	int numaux, contador = 0, negativo = 0, i = 0, cont = 0;
 	int numaux2 = 1;
 
 	if (num < 0)
@@ -33,10 +33,12 @@ int printd(va_list a)
 		{
 			_putchar('-');
 			negativo = 0;
+			cont++;
 		}
 		_putchar((num / numaux2) % 10 + '0');
 		numaux2 /= 10;
 	}
+	contador += cont;
 	return (contador);
 }
 /**
@@ -54,6 +56,11 @@ int prints(va_list a)
 	{
 		write(1, "(null)", 6);
 			return (6);
+	}
+	if (arg == "%\0")
+	{
+		_putchar('\0');
+		return (1);
 	}
 	while (arg[i] != '\0')
 	{

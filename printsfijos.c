@@ -8,9 +8,9 @@
  */
 int printliteral(char letra)
 {
-	_putchar('%');
+	_putchar('\0');
 	_putchar(letra);
-	return (2);
+	return (1);
 }
 /**
  * printnulo - this function is called when the you wanna print '%' as it is.

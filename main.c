@@ -21,8 +21,10 @@ int main(void)
     addr = (void *)0x7ffe637541f0;
     _printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
-    _printf("Negative:[%d]\n", -762534);
-    printf("Negative:[%d]\n", -762534);
+    len = _printf("%d\n", -762534);
+    len2 =     printf("%d\n", -762534);
+    printf("len = %d\nlen2 = %d\n", len, len2);
+
     _printf("Unsigned:[%u]\n", ui);
     printf("Unsigned:[%u]\n", ui);
     _printf("Unsigned octal:[%o]\n", ui);
@@ -40,6 +42,15 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+    _printf("%\n");
+
+/*    len = _printf("%d\n", 5);
+    len2 = printf("%d\n", 5);
+    printf("len = %d\nlen2 = %d\n", len, len2);
+    printf("negative case:\n");
+    len = _printf("%d\n", -5);
+    len2 = printf("%d\n", -5);
+    printf("len = %d\nlen2 = %d\n", len, len2);*/
  
     return (0);
 }
