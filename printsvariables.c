@@ -47,8 +47,14 @@ int printd(va_list a)
 int prints(va_list a)
 {
 	int i = 0;
-	char *arg = va_arg(a, char*);
+	char *arg;
 
+	arg = va_arg(a, char*);
+	if (arg == NULL)
+	{
+		write(1, "(null)", 6);
+			return (6);
+	}
 	while (arg[i] != '\0')
 	{
 		_putchar(arg[i]);
