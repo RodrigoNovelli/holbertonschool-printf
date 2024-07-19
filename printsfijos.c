@@ -3,7 +3,7 @@
  * printliteral - This function prints the parts of the format that
  * dont need to be replaced for an argument, si it litterally prints
  * the format that isn declearing another date.
- * @letra: the character that you wanna print
+ * @a: the argument that have not to be printed.
  * Return: 1, the length of a character.
  */
 int printliteral(va_list a)
