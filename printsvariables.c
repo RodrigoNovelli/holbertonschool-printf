@@ -17,6 +17,11 @@ int printd(va_list a)
 		negativo = 1;
 		num = -num;
 	}
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	numaux = num;
 	while (numaux > 0)
 	{
