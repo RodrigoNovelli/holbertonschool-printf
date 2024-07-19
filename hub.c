@@ -15,7 +15,7 @@ int (*hub(char letra))(va_list arg)
 		{'d', printd},
 		{'i', printd},
 		{'%', printnulo},
-		{'\0', printnulo},
+		{'\0', printliteral},
 	};
 	while (i < 5)
 	{

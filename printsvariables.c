@@ -18,12 +18,6 @@ int printd(va_list a)
 		num = -num;
 	}
 	numaux = num;
-	if (num == 0)
-	{
-		_putchar('0');
-		_putchar('0');
-		return (2);
-	}
 	while (numaux > 0)
 	{
 		contador++;

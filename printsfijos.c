@@ -6,11 +6,11 @@
  * @letra: the character that you wanna print
  * Return: 1, the length of a character.
  */
-int printliteral(char letra)
+int printliteral(va_list a)
 {
+	(void)a;
 	_putchar('\0');
-	_putchar(letra);
-	return (1);
+	return (0);
 }
 /**
  * printnulo - this function is called when the you wanna print '%' as it is.
