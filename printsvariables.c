@@ -8,14 +8,15 @@
  */
 int printd(va_list a)
 {
-	int num = va_arg(a, int);
-	int numaux, contador = 0, negativo = 0, i = 0, cont = 0;
+	long int num = va_arg(a, int);
+	long int numaux, contador = 0, negativo = 0, i = 0;
 	int numaux2 = 1;
 
 	if (num < 0)
 	{
 		negativo = 1;
 		num = -num;
+		num = num - 1;
 	}
 	if (num == 0)
 	{
@@ -37,13 +38,17 @@ int printd(va_list a)
 		if (negativo == 1)
 		{
 			_putchar('-');
-			negativo = 0;
-			cont++;
+			negativo = 2;
+			
 		}
+		if (negativo == 2 && (i + 1) == contador)
+		_putchar(((num + 1) / numaux2) % 10 + '0');
+		else
 		_putchar((num / numaux2) % 10 + '0');
 		numaux2 /= 10;
 	}
-	contador += cont;
+	if (negativo == 2)
+	return (contador + 1);
 	return (contador);
 }
 /**
