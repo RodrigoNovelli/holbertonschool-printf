@@ -42,8 +42,11 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+    
     len = _printf("%");
-    _printf("%d", len);
+    _printf("%d\n", len);
+    len = printf("\%");
+    printf("%d\n", len);
 /*    len = _printf("%d\n", 5);
     len2 = printf("%d\n", 5);
     printf("len = %d\nlen2 = %d\n", len, len2);
