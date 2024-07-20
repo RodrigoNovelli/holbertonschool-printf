@@ -21,7 +21,7 @@ int printnulo(va_list a)
 {
 	(void)a;
 	_putchar('%');
-	return (1);
+	return (0);
 }
 /**
  * printc - This function is called when you need to print an argument a that
