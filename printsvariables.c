@@ -11,7 +11,12 @@ int printd(va_list a)
 	long int num = va_arg(a, int);
 	long int numaux, contador = 0, negativo = 0, i = 0;
 	int numaux2 = 1;
-
+	if (num == -1)
+	{
+	_putchar('-');
+	_putchar('1');
+	return (2);
+	}
 	if (num < 0)
 	{
 		negativo = 1;

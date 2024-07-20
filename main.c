@@ -43,9 +43,9 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
     
-    len = _printf("%d", INT_MIN);
+    len = _printf("%d + %d = %d\n", INT_MIN, INT_MAX, -1);
     _printf("%d\n", len);
-    len = printf("%d", INT_MIN);
+    len = printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
     printf("%d\n", len);
 
     
