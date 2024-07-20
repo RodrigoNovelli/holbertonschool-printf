@@ -15,9 +15,9 @@ int _printf(const char *format, ...)
 	int (*func)(va_list);
 
 	va_start(arg, format);
-	if(format[0] == '%' && format[1] == '\0')
+	if (format[0] == '%' && format[1] == '\0')
 	{
-		return(-1);
+		return (-1);
 	}
 	while (format[i] != '\0')/* Este while recorre format hasta su fin*/
 	{
