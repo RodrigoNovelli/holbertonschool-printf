@@ -17,8 +17,9 @@ The code hosted in this file only do two things, reads the format and decides, i
 
 ## HUB.C ##
 As we said while describing the "_printf.c" file, "hub.c" is called when a "%" is found in the format.
-Basically hub.c is a function that is call to call another function, its sees what character is next to "%" and decides wich function will help printing that type of data.
-* the structure that hub function uses is declared in the "main.h" file with all the function declarations *
+Basically hub.c is a function that is call to call another function, its sees what character is next to "%" and decides wich function will help printing that type of data. 
+/ the structure that hub function uses is declared in the "main.h" file with all the function declarations. /
+
 | ** Data type declared ** | ** Function called for hub ** |
 | :--: | :--: |
 | Char | printc |
