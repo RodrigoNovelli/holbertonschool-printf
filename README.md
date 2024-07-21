@@ -1,10 +1,15 @@
 # _PRINTF FUNCTION #
 This is  function that prints everyting in its format argument (_printf(format, ...)), but when it finds a "%" it will look if you are declaring a datatype, if the next character its a declaration od datatype (s, c, d or i) it will find the first argument that matches this type and print it replacing the "%d" with the argument. if you wanna print "%" or literally "%d" you must use backslash to declare that you wanna use this part of the format in a literally way.
 | FORMAT DECLARATION | DATATYPE |
+| :---: | :---: |
 | %d | int |
+| :--: | :--: |
 | %i | int |
+| :--: | :--: |
 | %s | char *|
+| :--: | :--: |
 | %c | char |
+| :--: | :--: |
 | %% | literally % |
 
 ## _PRINTF.C FILE ##
