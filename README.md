@@ -37,7 +37,7 @@ The return of every function that hub.c calls has the amount of printed characte
 
 ## PRINTSVARIABLES.C ##
 As we said in the description of "printsfijos.c" every function here returns the amount of characters that is printed, in the functions hosted by "printsvariables.c" each case have a different return, thats why here we have "prints" (for string printing) and "printsd" (for int printing)
-** prints **
+#### prints ####
 The "prints" function will go trough the array of the string and print every character incrementing the counter until null character is reached, the return will be the counter, if we are in front of a null string it will just print "(null)" and return 6, because there are six characters printed.
-** printd **
+#### printd ####
 For int values we need to convert the ints values to char values so we can print them, so we created or own itoa function, so tis function will first count the amount of characters that is needed and then convert each digit into a character. The return will be te total amount of digit (including "-" in negatives) and 0, INTMAX and INTMIN are contemplated in this function.
