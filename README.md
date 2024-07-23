@@ -20,7 +20,7 @@ As we said while describing the "_printf.c" file, "hub.c" is called when a "%" i
 Basically hub.c is a function that is call to call another function, its sees what character is next to "%" and decides wich function will help printing that type of data. 
 / the structure that hub function uses is declared in the "main.h" file with all the function declarations. /
 
-![charflow print.c](https://drive.google.com/file/d/1VHFtVRtmpeb0jJ2JJk0psx__HQCQc_2X/view?usp=drive_link)
+<image src="https://drive.google.com/file/d/1VHFtVRtmpeb0jJ2JJk0psx__HQCQc_2X/view?usp=drive_link" alt="charflow print">
 
 | ** Data type declared ** | ** Function called for hub ** |
 | :--: | :--: |
